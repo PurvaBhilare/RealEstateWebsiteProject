@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Estate Project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="navbar-class element-width">
+          <a id="logo" href="index.html" class="logo-class"
+            ><img src="./images/Logo.jpg" id="logo-img"
+          /></a>
+          <div id="search-div">
+            <input
+              type="text"
+              placeholder="Search property by location"
+              id="search-input"
+            />
+            <button id="search-button">Search</button>
+          </div>
+          <div id="home-link">
+            <button id="home-link-a">
+              <i class="fa-solid fa-house" style="height: 50%"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <main id="main-container" class="element-width"></main>
+      <div class="property-details-container" style="display: none"></div>
+      <div class="booking" style="display: none">Bookin Page</div>
+      <footer class="footer-class">
+        <p id="footer-rights-reserved">
+          &copy; 2024 Real Estate Project. All rights reserved.
+        </p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

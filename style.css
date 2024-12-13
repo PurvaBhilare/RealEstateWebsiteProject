@@ -1,0 +1,339 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#logo-img {
+  width: 100px;
+  height: 80px;
+  border-radius: 8px;
+}
+
+.element-width {
+  max-width: 1200px;
+  margin: auto;
+}
+
+nav {
+  background-color: green;
+  box-shadow: 0px 5px 10px rgb(143, 174, 134);
+}
+
+.navbar-class {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.3rem 0;
+}
+
+.navbar-class .logo-class {
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 2.2rem;
+  color: white;
+}
+
+#search-input {
+  max-width: 400px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 7px;
+  border: none;
+}
+
+#home-link-a {
+  color: green;
+}
+
+#search-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: rgb(173, 188, 164);
+}
+
+#main-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 3rem 0;
+  flex-wrap: wrap;
+}
+
+.prop-card-class {
+  width: 280px;
+  border: 1px solid black;
+  border-radius: 2px;
+  cursor: pointer;
+  margin: 10px;
+  padding: 1rem;
+}
+
+.prop-card-class:hover {
+  box-shadow: 4px 4px 10px rgb(209, 200, 200);
+}
+
+.prop-card-class img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.prop-card-class h2 {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.prop-card-class p {
+  font-size: 1.2rem;
+  padding-top: 0.7rem;
+}
+
+.property-details-container {
+  display: flex;
+  justify-content: center;
+}
+
+.property-details-card {
+  width: 85%;
+  border: 1px solid black;
+  border-radius: 2px;
+  cursor: pointer;
+  margin: 10px;
+  padding: 1rem;
+}
+
+#details-img {
+  display: inline-block;
+  width: 100%;
+  object-fit: cover;
+  padding-bottom: 2px;
+}
+.slider {
+  width: 1200px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+  display: flex;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+.pictures {
+  display: flex;
+  /* width: 50%; */
+}
+.photo {
+  width: 30%;
+  border: 1px solid rgb(198, 198, 198);
+}
+
+#photo1 {
+  margin-right: 8px;
+}
+
+#photo2 {
+  margin-right: 8px;
+}
+
+#photo3 {
+  margin-right: 8px;
+}
+
+#details-property-name {
+  margin-bottom: 4px;
+}
+
+#details-description {
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+#book-viewing {
+  width: 100%;
+  background-color: greenyellow;
+  height: 30px;
+  border-radius: 5px;
+  color: pointer;
+  border: none;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.booking {
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.booking-card-class {
+  display: block;
+  margin-top: 30px;
+  border: 3px green solid;
+  padding: 10px;
+  width: 40%;
+  text-align: center;
+}
+
+.name-class {
+  margin: 10px 10px 30px;
+  color: green;
+}
+
+.email-class {
+  margin: 10px 10px 30px;
+  color: green;
+}
+
+.date-class {
+  margin: 10px 10px 30px;
+  color: green;
+}
+
+#date-input {
+  width: 29%;
+  margin-left: 5px;
+}
+
+#book {
+  background-color: greenyellow;
+  border: none;
+  border-radius: 5px;
+  width: 25%;
+  height: 40px;
+  letter-spacing: 2px;
+  z-index: 5;
+  margin-left: 30px;
+  font-weight: 600;
+}
+
+#appt-heading {
+  text-align: center;
+  padding-top: 5%;
+  color: green;
+}
+
+#appointment-booked-span {
+  color: rgb(58, 190, 58);
+  font-weight: 300;
+  font-size: x-large;
+  margin-left: 35%;
+  margin-top: 2%;
+}
+
+.footer-class {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+  color: white;
+  text-align: center;
+  height: 60px;
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+  /* position: absolute; */
+  bottom: 0;
+}
+
+@media (max-width: 500px) {
+  nav {
+    padding: 0 10px;
+  }
+  .navbar-class .logo-class {
+    font-size: 1.8rem;
+  }
+  #search-input {
+    width: 120px;
+    padding: 10px 10px;
+    margin-left: 40px;
+    font-size: 18px;
+  }
+  #search-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: rgb(173, 188, 164);
+  }
+  .prop-card-class {
+    width: 100%;
+  }
+
+  .slider {
+    width: 100%;
+    display: flex;
+  }
+  .pictures {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .photo {
+    object-fit: cover;
+  }
+
+  #photo1 {
+    width: 130px;
+    margin-bottom: 5px;
+  }
+  #photo2 {
+    width: 130px;
+    margin-bottom: 5px;
+  }
+  #photo3 {
+    width: 130px;
+  }
+  #photo4 {
+    width: 130px;
+  }
+  .booking-card-class {
+    display: block;
+    margin-top: 30px;
+    margin-left: 35px;
+    border: 3px green solid;
+    padding: 10px;
+    width: 80%;
+    text-align: center;
+  }
+  #appointment-booked-span {
+    display: inline-block;
+    color: rgb(58, 190, 58);
+    font-weight: 300;
+    font-size: large;
+    margin-left: 30%;
+    margin-top: 5%;
+  }
+  .date-class {
+    margin-bottom: 30px;
+    color: green;
+  }
+
+  #date-input {
+    width: 65%;
+    margin-left: 5px;
+  }
+  #book {
+    width: 40%;
+  }
+}
